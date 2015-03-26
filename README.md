@@ -3,6 +3,7 @@
 
 现在，你只需要配置一个Json文件，像这样：<br />
 <code>
+<pre>
 {
     "tableName": "student",
     "condition": {
@@ -20,9 +21,11 @@
         }
     ]
 }
+</pre>
 </code>
+<br />
 指定一个表名，给出查询条件，给出Excel的定义即可。<br />
-key对应数据库字段名，desc为Excel表头，Handlers表对数据的处理，
+其中：key对应数据库字段名，desc为Excel表头，Handlers表对数据的处理，
 如Decimal|2表示取到小数点后两位，Percent表示对数据取百分比。
 
 
