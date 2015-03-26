@@ -1,5 +1,8 @@
 package com.mk.enums;
 
+/**
+ * Created by yonney.yang on 2015/3/26.
+ */
 public enum ReportEnum {
     StuInfo(1, "StuInfo");
     private int typeId;
