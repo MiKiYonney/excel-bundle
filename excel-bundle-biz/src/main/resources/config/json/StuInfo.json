@@ -1,0 +1,46 @@
+{
+    "tableName": "student",
+    "condition": {
+        "classId": "classId",
+        "time": "hp_cal_dt"
+    },
+    "definition": [
+        {
+            "key": "id",
+            "desc": "主键Id"
+        },
+        {
+            "key": "studentNo",
+            "desc": "学号"
+        },
+        {
+            "key": "sex",
+            "desc": "性别",
+            "handlers": [
+                "TranslateToText | GenderEnum"
+            ]
+        },
+        {
+            "key": "mathScore",
+            "desc": "数学成绩",
+            "handlers": [
+                "Decimal|2"
+            ]
+        },
+        {
+            "key": "langScore",
+            "desc": "语文成绩",
+            "handlers": [
+                "Decimal|2"
+            ]
+        },
+        {
+            "key": "rank",
+            "desc": "排名百分比",
+            "handlers": [
+                "Decimal|2",
+                "Percent"
+            ]
+        }
+    ]
+}
